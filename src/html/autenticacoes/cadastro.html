@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Saúde - Cadastro</title>
+    <link rel="stylesheet" href="../../css/autenticacoes/cadastro.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main id="cadastro" class="container">
+        <h1>Sua Saúde</h1>
+        <img src="/assets/img/Logo.png" alt="Logo" class="logo"> 
+
+        <form id="cadastro-form">
+            <input id="nome-input" type="text" name="nome" placeholder="Nome">
+            <select id="sexo-input" name="sexo"> 
+                <option value="" disabled selected>Sexo</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Outro">Outros</option>
+            </select>
+            <label for="data_nascimento">Data de Nascimento</label>
+            <input id="dataNasc-input" type="date" name="data_nascimento">
+            <input id="altura-input" type="number" name="altura" placeholder="Altura (cm)" step="0.01">
+            <input id="peso-input" type="number" name="peso" placeholder="Peso (kg)" step="0.01">
+            <input id="email-input" type="email" name="email" placeholder="E-mail">
+            <input id="senha-input" type="password" name="senha" placeholder="Senha" >
+            <input id="confirma-senha-input" type="password" name="confirmar_senha" placeholder="Confirmar Senha">
+            <button type="submit">Cadastrar</button>
+
+            <p id="cadastro-sucesso">Usuário cadastrado.<br>Se conecte na tela de Login.</p>
+            <p id="cadastro-falha"></p>
+        </form>
+
+        <div class="links">
+            <a href="../../../index.html">Já possuo cadastro</a>
+        </div>
+    </main>
+    
+    <script src="../../../src/js/autenticacao/cadastro.js"></script>
+</body>
+</html>

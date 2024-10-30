@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Saúde</title>
+    <link rel="stylesheet" href="src/css/index/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main id="login" class="container">
+        <h1>Sua Saúde</h1>
+        <img src="/assets/img/Logo.png" alt="Logo">
+
+        <form id="login-form">
+            <input id="email-input" type="email" placeholder="E-mail" required>
+            <input id="senha-input" type="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+            <p id="erro-login">
+                Credencias Inválidas !
+            </p>
+        </form>
+
+        <div class="links">
+            <a href="src/html/autenticacoes/recuperarSenha.html">Esqueceu a senha?</a>
+            <a href="src/html/autenticacoes/cadastro.html">Cadastrar-se</a>
+        </div>
+    </main>
+    <script type="module" src="src/js/autenticacao/login.js"></script>
+</body>
+</html>

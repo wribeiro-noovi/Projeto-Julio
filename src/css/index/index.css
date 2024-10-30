@@ -1,0 +1,5 @@
+@import url(global.css);
+@import url(../autenticacoes/login.css);
+@import url(../autenticacoes/cadastro.css);
+@import url(../autenticacoes/recuperarSenha.css);
+@import url(../home/home.css);

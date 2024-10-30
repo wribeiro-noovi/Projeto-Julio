@@ -1,0 +1,88 @@
+#cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    margin-block: 20px;
+}
+
+img {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="email"],
+input[type="password"]{
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+select {
+    padding: 10px; 
+    margin: 5px 0; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; 
+}
+label {
+    margin-top: 10px;
+}
+button {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+.links {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+.links a {
+    color: #007BFF;
+    text-decoration: none;
+}
+.links a:hover {
+    text-decoration: underline;
+}
+
+h1{
+    margin-bottom: 25px;
+    font-size: 65px;
+    font-family: "Original Surfer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center; 
+}
+
+#cadastro-sucesso {
+    color: green; 
+    font-weight: bold; 
+}
+
+#cadastro-falha {
+    color: red; 
+    font-weight: bold; 
+    white-space: pre-line;
+    margin-bottom: 0;
+}

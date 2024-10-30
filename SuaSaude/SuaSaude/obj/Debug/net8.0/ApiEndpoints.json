@@ -1,0 +1,226 @@
+[
+  {
+    "ContainingType": "SuaSaude.Controllers.AtividadeController",
+    "Method": "Alter",
+    "RelativePath": "Atividade/AlterCheck",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "json",
+        "Type": "SuaSaude.Request.Atividade.IdAtvBodyJson",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SuaSaude.Controllers.AtividadeController",
+    "Method": "Create",
+    "RelativePath": "Atividade/CreateAtividades",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "json",
+        "Type": "SuaSaude.Request.Atividade.CreateAtividadeBodyJson",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SuaSaude.Controllers.AtividadeController",
+    "Method": "Delete",
+    "RelativePath": "Atividade/DeleteAtv",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "json",
+        "Type": "SuaSaude.Request.Atividade.IdAtvBodyJson",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SuaSaude.Controllers.AtividadeController",
+    "Method": "GetByDay",
+    "RelativePath": "Atividade/GetAtvPorDia",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "json",
+        "Type": "SuaSaude.Request.Atividade.GetDataBodyJson",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SuaSaude.Controllers.AtividadeController",
+    "Method": "GetByMouth",
+    "RelativePath": "Atividade/GetAtvPorMes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "json",
+        "Type": "SuaSaude.Request.Atividade.GetDataBodyJson",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SuaSaude.Controllers.AtividadeController",
+    "Method": "Update",
+    "RelativePath": "Atividade/UpdateAtv",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "json",
+        "Type": "SuaSaude.Request.Atividade.UpdateAtvBodyJson",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SuaSaude.Controllers.AutenticacaoController",
+    "Method": "EnviaToken",
+    "RelativePath": "Autenticacao/EnviarToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "json",
+        "Type": "SuaSaude.Request.Autenticacao.EnviaTokenBodyJson",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SuaSaude.Controllers.AutenticacaoController",
+    "Method": "AlteraSenha",
+    "RelativePath": "Autenticacao/RecuperaSenha",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "json",
+        "Type": "SuaSaude.Request.Autenticacao.RecuperaSenhaBodyJson",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SuaSaude.Controllers.AutenticacaoController",
+    "Method": "ValidarLogin",
+    "RelativePath": "Autenticacao/ValidarLogin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "json",
+        "Type": "SuaSaude.Request.Autenticacao.AutenticacaoBodyJson",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SuaSaude.Controllers.AutenticacaoController",
+    "Method": "ValidarToken",
+    "RelativePath": "Autenticacao/ValidarToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "json",
+        "Type": "SuaSaude.Request.Autenticacao.RecebeTokenBodyJson",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SuaSaude.Controllers.UsuarioController",
+    "Method": "CreateUsuario",
+    "RelativePath": "Usuario/CreateUsuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "json",
+        "Type": "SuaSaude.Request.Usuario.UsuarioBodyJson",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SuaSaude.Controllers.UsuarioController",
+    "Method": "Delete",
+    "RelativePath": "Usuario/DeleteUsuario",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "json",
+        "Type": "SuaSaude.Request.Usuario.UserIDBodyJson",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SuaSaude.Controllers.UsuarioController",
+    "Method": "GetUsuario",
+    "RelativePath": "Usuario/GetUsuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "json",
+        "Type": "SuaSaude.Request.Usuario.UserIDBodyJson",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SuaSaude.Controllers.UsuarioController",
+    "Method": "UpdateSenha",
+    "RelativePath": "Usuario/UpdateSenha",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "json",
+        "Type": "SuaSaude.Request.Usuario.AlterarSenhaBodyJson",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

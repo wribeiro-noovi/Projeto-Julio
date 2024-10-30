@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Saúde - Perfil</title>
+    <link rel="stylesheet" href="../../css/perfil/perfil.css"></head>
+<body>
+    <div class="container">
+        
+        <aside id="menu">
+            <nav>
+                <ul>
+                    <li><img src="../../../assets/icon/icon-atividades.png" alt="Perfil"> <a href="../home/home.html">Atividades</a></li>
+                    <li><a href="#" id="logout">Encerrar</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <header>
+            <div id="header-content">
+                <img src="../../../assets/img/Logo.png" alt="Logo" id="logo">
+                <h1>Sua Saúde</h1>
+            </div>
+        </header>
+
+        <main>
+            <section id="perfil">
+                <h2>Meu Perfil</h2>
+                <div class="informacoes-perfil">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" readonly>
+
+                    <label for="sexo">Sexo:</label>
+                    <input type="text" id="sexo" readonly>
+
+
+                    <label for="data-nascimento">Data de Nascimento:</label>
+                    <input type="date" id="data-nascimento"  readonly>
+
+                    <label for="altura">Altura</label>
+                    <input type="text" id="altura"  readonly>
+
+                    <label for="peso">Peso</label>
+                    <input type="text" id="peso"  readonly>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email"  readonly>
+
+                    <button id="alterar-senha">Alterar Senha</button>
+                    <button id="excluir-perfil">Excluir Perfil</button>
+                </div>
+            </section>
+
+            <div id="modal-alterar-senha" class="modal">
+                <div class="modal-conteudo">
+                    <span class="fechar">&times;</span>
+                    <h2>Alterar Senha</h2>
+                    <form id="form-alterar-senha">
+                        <label for="nova-senha">Senha Atual:</label>
+                        <input type="password" id="senha-atual" required>
+
+                        <label for="nova-senha">Nova Senha:</label>
+                        <input type="password" id="nova-senha" required>
+            
+                        <label for="confirmar-senha">Confirmar Senha:</label>
+                        <input type="password" id="confirmar-senha" required>
+
+                        <p id="mensagem-erro"></p>
+                        <p id="mensagem-sucesso"></p>
+            
+                        <button type="submit" class="botao-modal">Salvar</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="modal-deletar" class="modal">
+                <div class="modal-conteudo">
+                    <span class="fechar">&times;</span>
+                    <h2>Deletar Conta</h2>
+                    <p>Tem certeza que deseja deletar a conta?<br> Essa ação é irreversível!</p>
+                    <div class="botoes-modal">
+                        <button id="confirmar-deletar" class="botao-modal">Confirmar</button>
+                        <button id="cancelar-deletar" class="botao-modal">Cancelar</button> 
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+        <script type="module" src="../../js/home/autenticacao.js"></script>
+        <script type="module" src="../../js/perfil/perfil.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Saúde - Recuperar Senha</title>
+    <link rel="stylesheet" href="../../css/index/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main id="recuperarSenha" class="container">
+        <h1>Sua Saúde</h1>
+        <img src="/assets/img/Logo.png" alt="Logo">
+        
+        <form id="recuperarSenhaForm">
+            <div id="emailSection">
+                <input id="email" type="email" placeholder="E-mail" required>
+                <input id="confirma-email" type="email" placeholder="Confirmar E-mail" required>
+                <button id="enviarTokenBtn" type="button">Enviar Token de Recuperação</button>
+
+                <p id="email-falha"></p>
+            </div>
+
+            <div id="tokenSection" class="hiden">
+                <input id="token" type="text" placeholder="Token" required>
+                <button id="verificaTokenBtn" type="button">Verificar Token</button>
+
+                <p id="token-falha"></p>
+            </div>
+
+            <div id="novaSenha" class="hiden">
+                <input id="nova-senha" type="password" placeholder="Nova Senha" required>
+                <input id="confirma-nova-senha" type="password" placeholder="Confirmar Nova Senha" required>
+                <button type="submit">Confirmar</button>
+
+                <p id="nova-senha-falha"></p>
+                <p id="nova-senha-sucesso"></p>
+            </div>
+        </form>
+        <div class="links">
+            <a href="../../../index.html">Voltar ao Login</a>
+        </div>
+    </main>
+
+    <script src="../../js/autenticacao/recuperaSenha.js"></script>
+</body>
+</html>

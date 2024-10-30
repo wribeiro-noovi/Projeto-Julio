@@ -1,0 +1,21 @@
+*{
+   background-color: #f4f4f4; 
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+h1{
+    margin-bottom: 25px;
+    font-size: 65px;
+    font-family: "Original Surfer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container{
+    max-width: 1280px;
+    padding-inline: 32px;
+    margin-inline: auto;
+}
+  

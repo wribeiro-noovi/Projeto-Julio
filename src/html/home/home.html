@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Saúde - Home</title>
+    <link rel="stylesheet" href="../../css/home/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside id="menu">
+            <nav>
+                <ul>
+                    <li><img src="../../../assets/icon/icon-perfil.png" alt="Perfil"> <a href="../perfil/perfil.html">Perfil</a></li>
+                    <li><a href="#" id="logout">Encerrar</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <header>
+            <div id="header-content">
+                <img src="../../../assets/img/Logo.png" alt="Logo" id="logo">
+                <h1>Sua Saúde</h1>
+            </div>
+        </header>
+        
+        <main>
+            <section id="atividades">
+                <div id="mes-navegacao" class="navegacao">
+                    <button id="mes-anterior">&#10094;</button>
+                    <span id="mes-atual"></span>
+                    <button id="mes-proximo">&#10095;</button>
+                </div>
+                <div id="dia-navegacao" class="navegacao">
+                    <button id="dia-anterior">&#10094;</button>
+                    <span id="dia-atual"></span>
+                    <button id="dia-proximo">&#10095;</button>
+                </div>
+                
+                <div id="lista-atividades">
+                    <h2>Atividades do dia</h2>
+                    <ul id="atividades-lista"></ul>
+                </div>
+            </section>
+
+            <aside id="controle-atividades">
+                <h3>Gerenciar Atividades</h3>
+                <button id="adicionar-atividade">Adicionar Atividade</button>
+                <button id="alterar-atividade">Alterar Atividade</button>
+                <button id="remover-atividade">Remover Atividade</button>
+                
+                <div id="grafico-atividade">
+                    <canvas id="grafico"></canvas>
+                </div>
+
+                <div id="mensagem-erro">
+                    <p>Não há atividades para desenvolver o gráfico</p>
+                </div>
+            </aside>
+            
+            <div id="modal-adicionar" class="modal">
+                <div class="modal-conteudo">
+                    <span class="fechar">&times;</span>
+                    <h2>Adicionar Atividade</h2>
+                    <form id="form-adicionar-atividade">
+                        <label for="descricao">Descrição:</label>
+                        <input type="text" id="descricao" required>
+
+                        <label for="data">Data:</label>
+                        <input type="date" id="data" required>
+
+                        <label for="hora">Hora:</label>
+                        <input type="time" id="hora" required>
+
+                        <button type="submit" class="botao-modal">Salvar</button>
+                    </form>
+                </div>
+            </div>
+            <div id="modal-selecionar" class="modal">
+                <div class="modal-conteudo">
+                    <span class="fechar">&times;</span>
+                    <h2>Selecione a Atividade:</h2>
+                    <select id="lista-atividades-modal"></select>
+                    <button id="confirmar-selecao" class="botao-modal">Confirmar Seleção</button>
+                </div>
+            </div>
+            <div id="modal-alterar" class="modal" style="display: none;">
+                <div class="modal-conteudo">
+                    <span class="fechar">&times;</span>
+                    <h2 id="titulo-atividade">Alterar Atividade</h2>
+                    <form id="form-alterar-atividade">
+                        <label for="descricao-atividade">Descrição:</label>
+                        <input type="text" id="descricao-atividade" required>
+            
+                        <label for="data-atividade">Data:</label>
+                        <input type="date" id="data-atividade" required>
+            
+                        <label for="hora-atividade">Hora:</label>
+                        <input type="time" id="hora-atividade" required>
+            
+                        <button type="submit" class="botao-modal">Salvar</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="modal-selecionar-exclusao" class="modal">
+                <div class="modal-conteudo">
+                    <span class="fechar">&times;</span>
+                    <h2>Selecione a Atividade:</h2>
+                    <select id="lista-atividades-excluir"></select>
+                    <button id="confirmar-selecao-excluir" class="botao-modal">Confirmar Seleção</button>
+                </div>
+            </div>
+            <div id="modal-excluir" class="modal" style="display: none;">
+                <div class="modal-conteudo">
+                    <span class="fechar">&times;</span>
+                    <h2 id="titulo-atividade"></h2>
+                    <p>
+                        Tem certeza que deseja excluir essa atividade ? <br>
+                        Essa ação é irreversível!
+                    </p>
+                    <button type="button" id="confirmar-exclusao" class="botao-modal">Confirmar Exclusão</button>
+                    <button type="button" id="cancelar-exclusao" class="botao-modal">Cancelar</button>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+    <script type="module" src="../../js/home/home.js"></script>
+    <script type="module" src="../../js/home/autenticacao.js"></script>
+    <script type="module" src="../../js/home/atividades.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
